@@ -1,0 +1,105 @@
+* 
+{
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-image: linear-gradient(150deg,#1a0f33,#020108);
+}
+
+.light
+{
+    color: #f30;
+    font-size: 4em;
+    text-align: center;
+
+    width: 100vw;
+    position: absolute;
+    top: 30%;
+    transform: translate(0, -50%);
+
+    text-shadow: #fcc 0px 0px 5px;
+    filter: blur(100px);
+    -webkit-filter: blur(100px);
+}
+
+.willyou
+{
+    color: #fc0;
+    font-size: 4em;
+    text-align: center;
+
+    width: 100vw;
+    position: absolute;
+    top: 30%;
+    transform: translate(0, -50%);
+
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.pancake
+{
+    position: absolute;
+    margin: 1em;
+    padding: 0;
+    width: 128px;
+    height: 100vh;
+    background-image: url("P4ncakeValentine.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pancakelove
+{
+    position: absolute;
+    margin: 1em;
+    padding: 0;
+    width: 256px;
+    height: 100vh;
+    background-image: url("P4ncakeValentineLove.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.buttons
+{
+    width: 100vw;
+    height: min-content;
+    position: absolute;
+    top: 60%;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yes
+{
+    margin-right: 32px;
+}
+
+.no 
+{
+    cursor: not-allowed;
+}
+
+@-webkit-keyframes
+glow 
+{
+    from 
+    {
+        text-shadow: #fc0 0px 0px 70px;
+    }
+    to
+    {
+        text-shadow: #fc0 0px 0px 50px;
+    }
+}
